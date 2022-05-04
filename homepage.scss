@@ -75,7 +75,7 @@ li {
 .navWrapper1 {
   padding: 0.5em;
   margin: auto auto;
-  
+
   background-color: rgb(28, 2, 40);
 
   justify-content: center;
@@ -83,28 +83,23 @@ li {
   text-align: center;
 }
 
-
 @media only screen and (min-device-width: 100px) {
   li {
     margin: 0.5em;
-    
   }
-.textWrapper h1{
-  font-weight: 400px;
-  font-size: small;
+  .textWrapper h1 {
+    font-weight: 400px;
+    font-size: small;
+  }
 }
-
-}
-
 
 @media only screen and (min-device-width: 320px) {
   li {
     margin: 0.5em;
-    
   }
-  .textWrapper h1{
-    font-weight:bold;
-    font-size:large;
+  .textWrapper h1 {
+    font-weight: bold;
+    font-size: large;
   }
 }
 
@@ -114,9 +109,9 @@ li {
     font-weight: bold;
   }
 
-  .textWrapper h1{
+  .textWrapper h1 {
     font-weight: 800;
-   font-size: large;
+    font-size: large;
   }
 }
 
@@ -127,7 +122,6 @@ li {
 .textWrapper h1 {
   margin-top: 0;
   margin-bottom: 0;
-
 }
 
 .slogan {
@@ -135,15 +129,56 @@ li {
   margin-bottom: 0;
 }
 
-nav{
-  margin-top: .5rem;
+nav {
+  margin-top: 0.5rem;
 }
 
-.groupG{
-  color: whitesmoke
+.groupG {
+  color: whitesmoke;
 }
-.etrep{
+.etrep {
   color: #3cb7f4;
 }
 
+.imageSection {
+  display: flex;
+  justify-content: center;
 
+  .card {
+    display: block;
+    justify-content: center;
+    position: relative;
+    height: 18.75em;
+    width: 18.75em;
+  }
+
+  img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+    animation: slider 20s infinite;
+    
+  }
+
+  @keyframes slider {
+    0%{
+ display:none;
+
+    }
+
+    20%{
+      display:flex;
+    }
+
+    50%{
+      display:none;
+    }
+    
+  }
+
+ 
+
+
+}
