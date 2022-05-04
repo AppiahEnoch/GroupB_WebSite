@@ -83,6 +83,121 @@ li {
   text-align: center;
 }
 
+.movingText1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.textWrapper h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slogan {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+.groupG {
+  color: whitesmoke;
+}
+.etrep {
+  color: #3cb7f4;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+
+  // max-width: 50%;
+
+  // background-color: rgb(201, 210, 218);
+  .content {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    // background-color: red;
+    // padding: 1em ;
+
+    max-width: 10em;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.carousel-indicators {
+  display: flexbox;
+  position: relative;
+
+  //background-color: aliceblue;
+}
+
+#carouselExampleCaptions {
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 300px;
+}
+
+// button that hold the arrows
+.carousel-control-next {
+  max-height: 50%;
+  width: 1em;
+  background-color: rgb(16, 4, 61);
+}
+
+.carousel-control-prev {
+  max-height: 50%;
+  width: 1em;
+  background-color: rgb(16, 4, 61);
+}
+
+.carousel-inner {
+  max-width: 20em;
+  max-height: 20em;
+}
+
+.Sponsors {
+  width: 100%;
+  background-color: rgb(22, 2, 62);
+  display: inline-block;
+
+  text-align: center;
+  margin: 0;
+
+  .content {
+    margin: auto;
+    background-color: var(--pageColor);
+
+    .card {
+      display: inline-block;
+      background-color: #370a76;
+      min-width: 5em;
+      max-width: 5em;
+      min-height: 5em;
+      max-height: 5em;
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  .SponsorText {
+    color: blue;
+    font-weight: 800;
+    font-style: italic;
+  }
+}
+
+// media query below
+
 @media only screen and (min-device-width: 100px) {
   li {
     margin: 0.5em;
@@ -113,72 +228,74 @@ li {
     font-weight: 800;
     font-size: large;
   }
-}
 
-.movingText1 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.textWrapper h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.slogan {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-nav {
-  margin-top: 0.5rem;
-}
-
-.groupG {
-  color: whitesmoke;
-}
-.etrep {
-  color: #3cb7f4;
-}
-
-.imageSection {
-  display: flex;
-  justify-content: center;
-
-  .card {
+  .imageWrapper {
+    // background-color: aliceblue;
     display: block;
-    justify-content: center;
-    position: relative;
-    height: 18.75em;
-    width: 18.75em;
+    // width: 0%;
+    // justify-content: center;
+    // margin: 0;
+    //max-height: 20px;
+
+    // max-width: 50%;
+
+    .content {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      // background-color: red;
+      // padding: 1em ;
+
+      max-width: 30em;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        z-index: 1;
+      }
+
+      .carousel-indicators {
+        margin: auto auto;
+      }
+    }
+
+    .carousel-item {
+      width: 100%;
+      height: 100%;
+    }
   }
 
-  img {
-    position: absolute;
-    height: 100%;
+  .Sponsors {
     width: 100%;
-    object-fit: contain;
+    background-color: rgb(22, 2, 62);
+    display: inline-block;
 
-    animation: slider 20s infinite;
-    
+    text-align: center;
+    margin: 0;
+
+    .content {
+      margin: auto;
+      background-color: var(--pageColor);
+
+      .card {
+        display: inline-block;
+        background-color: #370a76;
+        min-width: 10em;
+        max-width: 10em;
+        min-height: 10em;
+        max-height: 10em;
+
+        img {
+          object-fit: contain;
+        }
+      }
+    }
   }
 
-  @keyframes slider {
-    0%{
- display:none;
-
-    }
-
-    20%{
-      display:flex;
-    }
-
-    50%{
-      display:none;
-    }
-    
-  }
-
- 
-
-
+  //end of media q
 }
+
+
+
+
