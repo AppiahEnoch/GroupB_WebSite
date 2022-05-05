@@ -101,11 +101,33 @@ nav {
   margin-top: 0.5rem;
 }
 
+.gb {
+  position: relative;
+
+  img {
+    width: 5em;
+    height: 100px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .groupG {
   color: whitesmoke;
 }
 .etrep {
   color: #3cb7f4;
+}
+
+.imgCard {
+  max-width: 5em;
+  max-height: 5em;
+  img {
+    object-fit: contain;
+  }
 }
 
 .imageWrapper {
@@ -190,7 +212,7 @@ nav {
   }
 
   .SponsorText {
-    color: blue;
+    color: rgb(147, 147, 247);
     font-weight: 800;
     font-style: italic;
   }
@@ -295,7 +317,5 @@ nav {
 
   //end of media q
 }
-
-
 
 
