@@ -1,3 +1,9 @@
+@import "fontawesome.scss";
+@import "solid.scss";
+@import "brands.scss";
+@import "regular.scss";
+@import "v4-shims.scss";
+
 :root {
   //min-with
   --smallPnone: 320px;
@@ -130,6 +136,11 @@ nav {
   }
 }
 
+
+i{
+  color: #3cb7f4;
+}
+
 .imageWrapper {
   display: flex;
   justify-content: center;
@@ -217,6 +228,47 @@ nav {
     font-style: italic;
   }
 }
+
+.part {
+  color: rgb(132, 172, 207);
+}
+
+.footer{
+  
+  .social{
+    margin: auto auto;
+    width: 100%;
+    display:flex;
+  justify-content: center;
+
+   a{
+     padding: .5em;
+&:hover{
+  text-decoration: underline;
+}
+  
+     i{
+       &:hover{
+     
+         cursor: pointer;
+       }
+      font-size: 20px;
+     }
+   }
+
+  }
+
+
+}
+
+.copyR{
+
+  width: 100%;
+  text-align: left;
+  font-size: small;
+  font-style: italic;
+  color: #b9d2de;
+ }
 
 // media query below
 
@@ -317,5 +369,3 @@ nav {
 
   //end of media q
 }
-
-
