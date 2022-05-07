@@ -20,6 +20,7 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
+
 }
 
 *,
@@ -234,14 +235,27 @@ i{
 }
 
 .footer{
-  
+ // background-color: gray;
+  margin-left: .5em;
+  margin-right: .5em;
+  margin-top: 2em;
+
   .social{
+   // background-color: red;
     margin: auto auto;
     width: 100%;
-    display:flex;
+    display:inline-block;
   justify-content: center;
+  object-fit: contain;
+  align-items: center;
+  text-align: center;
 
    a{
+    justify-content: center;
+    object-fit: contain;
+    align-items: center;
+    text-align: center;
+    text-align: center;
      padding: .5em;
 &:hover{
   text-decoration: underline;
@@ -257,7 +271,7 @@ i{
    }
 
   }
-
+//
 
 }
 
@@ -289,7 +303,34 @@ i{
   .textWrapper h1 {
     font-weight: bold;
     font-size: large;
+    
   }
+
+  a{
+   // color: rgb(14, 6, 6);
+    font-size: x-small;
+  }
+  .social{
+padding: 2px;
+
+  }
+
+  i{
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: medium;
+  }
+
+  .copyR{
+
+    width: 100%;
+    text-align:center;
+    font-size: small;
+    font-style: italic;
+    color: #b9d2de;
+   }
+
+
 }
 
 @media only screen and (min-device-width: 700px) {
@@ -366,6 +407,24 @@ i{
       }
     }
   }
+
+
+  a{
+   
+    font-size:small ;
+  }
+  .social{
+    display: flex;
+
+    i{
+      font-weight: 700;
+    }
+    
+  }
+
+.copyR{
+  text-align: left;
+}
 
   //end of media q
 }
