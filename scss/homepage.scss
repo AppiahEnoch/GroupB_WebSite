@@ -20,7 +20,6 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
-
 }
 
 *,
@@ -137,8 +136,7 @@ nav {
   }
 }
 
-
-i{
+i {
   color: #3cb7f4;
 }
 
@@ -215,10 +213,18 @@ i{
       min-width: 5em;
       max-width: 5em;
       min-height: 5em;
-      max-height: 5em;
 
+      padding-top: 2em;
+      padding-bottom: 1em;
+      padding-left: 1em;
+      padding-right: 1em;
       img {
-        object-fit: contain;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
       }
     }
   }
@@ -234,55 +240,51 @@ i{
   color: rgb(132, 172, 207);
 }
 
-.footer{
- // background-color: gray;
-  margin-left: .5em;
-  margin-right: .5em;
+.footer {
+  // background-color: gray;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   margin-top: 2em;
 
-  .social{
-   // background-color: red;
+  .social {
+    // background-color: red;
     margin: auto auto;
     width: 100%;
-    display:inline-block;
-  justify-content: center;
-  object-fit: contain;
-  align-items: center;
-  text-align: center;
-
-   a{
+    display: inline-block;
     justify-content: center;
     object-fit: contain;
     align-items: center;
     text-align: center;
-    text-align: center;
-     padding: .5em;
-&:hover{
-  text-decoration: underline;
-}
-  
-     i{
-       &:hover{
-     
-         cursor: pointer;
-       }
-      font-size: 20px;
-     }
-   }
 
+    a {
+      justify-content: center;
+      object-fit: contain;
+      align-items: center;
+      text-align: center;
+      text-align: center;
+      padding: 0.5em;
+      &:hover {
+        text-decoration: underline;
+      }
+
+      i {
+        &:hover {
+          cursor: pointer;
+        }
+        font-size: 20px;
+      }
+    }
   }
-//
-
+  //
 }
 
-.copyR{
-
+.copyR {
   width: 100%;
   text-align: left;
   font-size: small;
   font-style: italic;
   color: #b9d2de;
- }
+}
 
 // media query below
 
@@ -303,34 +305,29 @@ i{
   .textWrapper h1 {
     font-weight: bold;
     font-size: large;
-    
   }
 
-  a{
-   // color: rgb(14, 6, 6);
+  a {
+    // color: rgb(14, 6, 6);
     font-size: x-small;
   }
-  .social{
-padding: 2px;
-
+  .social {
+    padding: 2px;
   }
 
-  i{
+  i {
     margin-left: 3px;
     margin-right: 3px;
     font-size: medium;
   }
 
-  .copyR{
-
+  .copyR {
     width: 100%;
-    text-align:center;
+    text-align: center;
     font-size: small;
     font-style: italic;
     color: #b9d2de;
-   }
-
-
+  }
 }
 
 @media only screen and (min-device-width: 700px) {
@@ -408,23 +405,20 @@ padding: 2px;
     }
   }
 
-
-  a{
-   
-    font-size:small ;
+  a {
+    font-size: small;
   }
-  .social{
+  .social {
     display: flex;
 
-    i{
+    i {
       font-weight: 700;
     }
-    
   }
 
-.copyR{
-  text-align: left;
-}
+  .copyR {
+    text-align: left;
+  }
 
   //end of media q
 }
