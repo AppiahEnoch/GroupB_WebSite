@@ -315,12 +315,16 @@ i {
   }
   .social {
     padding: 2px;
+    a{
+      font-size: x-small;
+      color: rgb(140, 117, 225);
+    }
   }
 
   i {
-    margin-left: 3px;
-    margin-right: 3px;
-    font-size: medium;
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size:small ;
   }
 
   .copyR {
@@ -413,6 +417,7 @@ i {
   }
   .social {
     display: flex;
+
 
     i {
       font-weight: 700;
