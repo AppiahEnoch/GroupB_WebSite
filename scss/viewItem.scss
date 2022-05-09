@@ -230,22 +230,29 @@
     }
 
     .col2{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+
     color: aqua;
       background-color: rgb(93, 13, 222);
       min-width: 10em;
       min-height: 10em;
+
+
+      .p1{
+        margin-left: 1px;
+        margin-right: 1px;
+        background-color: gray;
+        min-width: 1em;
+        min-height: 1em;
+      }
     }
 
 
-    .col3{
-      color: aqua;
-      background-color: rgb(93, 13, 222);
-      min-width: 10em;
-      min-height: 10em;
-        
-      }
+
 
       .col4{
+
         margin-top: 1em;
         text-align: center;
 
@@ -258,8 +265,8 @@
         }
 
         .col5{
-      
-          text-align: center;
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
   
           grid-column: 1 / span 2;
           background-color: rgb(93, 13, 222);
@@ -269,6 +276,15 @@
 
           min-width: 10em;
           min-height: 10em;
+
+
+          .s1{
+            margin-left: 1px;
+            margin-right: 1px;
+            background-color: gray;
+            min-width: 10em;
+            min-height: 10em;
+          }
             
           }
 

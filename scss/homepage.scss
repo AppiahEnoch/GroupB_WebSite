@@ -264,7 +264,7 @@ i {
       align-items: center;
       text-align: center;
       text-align: center;
-      padding: 0.5em;
+     // padding: 0.5em;
       &:hover {
         text-decoration: underline;
       }
@@ -314,16 +314,20 @@ i {
     font-size: x-small;
   }
   .social {
-    padding: 2px;
+   // background-color: gray;
+
+  
     a{
+      margin-left: 1px;
+      margin-right: 1px;
       font-size: x-small;
       color: rgb(140, 117, 225);
     }
   }
 
   i {
-    margin-left: 1px;
-    margin-right: 1px;
+    margin-left: 0px;
+    margin-right: 0px;
     font-size:small ;
   }
 
@@ -417,11 +421,21 @@ i {
   }
   .social {
     display: flex;
+  margin-left: 1em;
+  margin-right: 1em;
 
+    a{
+     // background-color: chocolate;
+      padding: 0.5em;
 
-    i {
-      font-weight: 700;
+      i {
+        font-weight: 700;
+     font-size: large;
+      }
     }
+
+
+
   }
 
   .copyR {
