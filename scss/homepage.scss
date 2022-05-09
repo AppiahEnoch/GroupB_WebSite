@@ -70,6 +70,8 @@ li {
     background-color: #0087ca;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
+
+   
   }
 
   &:hover::after {
@@ -334,6 +336,7 @@ i {
   li {
     font-size: large;
     font-weight: bold;
+    
   }
 
   .textWrapper h1 {
