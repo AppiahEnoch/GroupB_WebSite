@@ -1,0 +1,148 @@
+@import "fontawesome.scss";
+@import "solid.scss";
+@import "brands.scss";
+@import "regular.scss";
+@import "v4-shims.scss";
+
+:root {
+  --pageColor: rgb(33, 2, 66);
+  --fontfamily: Arial, Helvetica, sans-serif;
+  --textColor: rgb(247, 235, 235);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--pageColor);
+  font-family: var(--fontfamily);
+  color: var(--textColor);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+
+.titleWrapper{
+    background-color: rgb(2, 7, 11);
+   display: flex;
+   .col1{
+    position: relative;
+    max-width: 10em;
+    max-height: 10em;
+    img{
+    overflow: hidden;
+        width:100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+    .title{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        .col2{
+        width: 100%;
+         width: fit-content;
+          
+            text-align: center;
+            flex-wrap: wrap;
+           align-self: center;
+
+
+           .groupG {
+               font-size: 12pt;
+               font-weight: bolder;
+            color: whitesmoke;
+          }
+          .etrep {
+            font-size: 12pt;
+            font-weight: bolder;
+            color: #3cb7f4;
+          }
+        }
+
+    }
+}
+
+
+
+
+@media (min-width: 700px) {
+    .titleWrapper{
+        background-color: rgb(2, 7, 11);
+       display: flex;
+       .col1{
+        position: relative;
+        max-width: 10em;
+        max-height: 10em;
+        img{
+        overflow: hidden;
+            width:100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+        .title{
+      
+            .col2{
+               .groupG {
+                   font-size: 24pt;
+                   font-weight: bolder;
+            
+              }
+              .etrep {
+                font-size: 24pt;
+                font-weight: bolder;
+              
+              }
+            }
+    
+        }
+    }
+
+}
+
+
+.payTextWrapper{
+   // margin-top: 1em;
+   // margin: 5em 5em;
+   background-color: rgb(18, 2, 42); 
+   justify-content: center;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+
+.mainWrapper{
+    margin: 10% 10%  10%  10%  ;
+    background-color: #3cb7f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+
