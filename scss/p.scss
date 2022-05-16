@@ -130,10 +130,12 @@ p {
   }
 
 .firstWrapper{
-    background-color:black;
+    background-color:rgb(12, 1, 1);
     display: grid;
     grid-template-columns: 1fr;
     margin: 20%;
+
+    min-width: 20em;
    
 
     .card{
@@ -154,7 +156,7 @@ p {
         display: grid;
         grid-template-columns: 1fr;
         margin: 10% 40% 40%;
-       
+        min-width: 40em;
     
         .card{
             display: grid;
