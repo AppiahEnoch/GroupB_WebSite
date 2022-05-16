@@ -220,7 +220,8 @@ border: 3px solid blue;
     
       .textInput{
       //  margin: 2px 1em;
-        color: rgb(174, 28, 28);
+        color: rgb(14, 1, 1);
+        background-color:white;
     
       }
     
@@ -257,18 +258,21 @@ border: 3px solid blue;
       .comboWrapper{
        // display: flex;
        // padding: 2px;
-        background-color: rgb(63, 124, 170);
+        background-color: white;
     
     
         #theinput{
-         // width: 8em;
+            color: rgb(14, 1, 1);
+            background-color:white;
+            font-weight: 700;
           
         }
     
         select{
-            background-color: transparent;
-          //width: 6em;
-         //margin:0 0 0px 3px;
+            color: rgb(14, 1, 1);
+            background-color:white;
+            border: 0px solid blue;
+            font-weight: 700;
         }
       }
     
@@ -297,14 +301,24 @@ border: 3px solid blue;
     
       .dateWrapper{
         display:block;
-      
-    
+        
+    .datep{
+        color: rgb(14, 1, 1);
+        background-color:white;
+        border: 1px solid black;
+        font-weight: 700;
+    }
     
     
       
         #cvvid{
       
           color: #3c15da;
+          color: rgb(14, 1, 1);
+          background-color:white;
+          border: 0px solid blue;
+          font-weight: 700;
+
               }
     
               .btnSubmitCard{
