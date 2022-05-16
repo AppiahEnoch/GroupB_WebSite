@@ -29,6 +29,17 @@ body {
   font-family: var(--fontfamily);
   color: var(--textColor);
 
+  display: flex;
+  justify-content: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+
+
 }
 
 h1,
@@ -131,12 +142,13 @@ p {
   }
 
 .firstWrapper{
-    background-color:rgb(12, 1, 1);
+    background-color:rgb(20, 7, 7);
     display: grid;
     grid-template-columns: 1fr;
     margin: 20% 20% 20% 15%;
 
     min-width: 20em;
+    margin-right: 30%;
    
 
     .card{
