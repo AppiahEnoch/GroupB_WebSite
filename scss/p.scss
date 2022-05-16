@@ -1,0 +1,83 @@
+@import "fontawesome.scss";
+@import "solid.scss";
+@import "brands.scss";
+@import "regular.scss";
+@import "v4-shims.scss";
+
+:root {
+  --pageColor: rgb(33, 2, 66);
+  --fontfamily: Arial, Helvetica, sans-serif;
+  --textColor: rgb(247, 235, 235);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--pageColor);
+  font-family: var(--fontfamily);
+  color: var(--textColor);
+
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+.firstWrapper{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20%;
+    min-height: 50em;
+
+    .card{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10%;
+        background-color: black;
+    
+
+    }
+
+}
+
+
+@media (min-width: 700px) {
+    .firstWrapper{
+        background-color: aliceblue;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 5% 40% 40%;
+       
+    
+        .card{
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 10%;
+            background-color: black;
+        
+    
+        }
+    
+    }
+}
+
