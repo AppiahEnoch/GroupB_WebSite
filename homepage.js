@@ -1,3 +1,14 @@
-function openWin() {
- var   myWindow = window.open("", "/viewItems/viewItems.html", "width=200,height=100");   // Opens a new window
-  }
+function openViewItemsSelf() {
+  window.open("viewItems.html", "_self");
+}
+
+function openPaymentSelf() {
+  window.open("payment.html", "_self");
+}
+
+function openAboutUsSelf() {
+  window.open("aboutUs.html", "_self");
+}
+function openLoginSelf() {
+  window.open("login.html", "_self");
+}

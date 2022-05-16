@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page Group B</title>
 
-    <script src="javascript/homePage.js"></script>
+  
     <script src="jquery.js"></script>
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="dist/homepage.css" />
+    <script src="homepage.js"></script>
 
   </head>
   <body>
     <div class="grid">
       <div class="navWrapper1">
-     
         <div class="movingText1">
           <div class="textWrapper">
             <h1 class="gb">
@@ -41,11 +41,10 @@
             </div>
           </div>
         </div>
+
         <nav>
-          <li onclick="window.open('viewItems.html'),'_blank'">
-            View Items
-          </li>
-          <li onclick="window.open('p.html'),'_blank'" >Payment</li>
+          <li onclick="openViewItemsSelf()">View Items</li>
+          <li onclick="openPaymentSelf()">Payment</li>
           <li>About Us</li>
         </nav>
       </div>
