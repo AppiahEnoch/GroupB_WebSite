@@ -259,12 +259,15 @@ border: 3px solid blue;
      // align-items: center;
     
       .comboWrapper{
+          margin: 0;
        // display: flex;
        // padding: 2px;
         background-color: white;
     
     
         #theinput{
+            width: 100%;
+            padding: 1px;
             color: rgb(14, 1, 1);
             background-color:white;
 
@@ -273,9 +276,11 @@ border: 3px solid blue;
         }
     
         select{
+            width: 100%;
+            padding: 0;
             color: rgb(14, 1, 1);
             background-color:white;
-            border: 0px solid blue;
+          
             font-weight: 700;
         }
       }
@@ -305,6 +310,13 @@ border: 3px solid blue;
     
       .dateWrapper{
         display:block;
+
+        .cardnum{
+            width: 100%;
+            color: black;
+            font-weight: 700;
+            background-color: white;
+        }
         
     .datep{
         color: rgb(14, 1, 1);
