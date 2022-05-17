@@ -56,177 +56,110 @@ a,
   text-decoration: none;
 }
 
-.grid {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  display: grid;
-  grid-template-columns: 0.2fr 2fr;
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  background-color:var(--pageColor);
 
 
-  gap: 0px;
-
-  .col1 {
-position: relative;
-   // visibility: hidden;
-    // background-color: rgb(5, 5, 112);
-    margin: 2em;
-
-    .pc {
-      position: absolute;
-      left: 10px;
-      width: 400px;
-      height: 300px;
-      margin: -15px -15px -15px -15px;
-      max-width: 10em;
-      height: 10em;
-    }
-  }
-
-  .col2 {
-position: relative;
-    max-height: 5em;
-    //background-color: rgb(145, 5, 145);
-    // background-color: rgb(5, 5, 112);
-    background-color: var(--pageColor);
-    padding: 10px;
-
-    h1 {
-   
-      font-size: larger;
-
-      .groupG {
-
-
-        color: whitesmoke;
-      }
-      .etrep {
  
-        color: #3cb7f4;
-      }
-    }
 
 
-    .btnSubmitWrapper{
-      position: fixed;
-      top: 4em;
-      right: 2em;
-    
-      .btnSubmit{
-        color: rgb(126, 126, 205);
-        font-weight: 700;
-        background-color: black;
-        &:hover{
-          color: white;
-          background-color: red;
-        }
-      }
 
-      i{
-        color: blue;
-      }
 
-    }
+.imageWrapper{
+  img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #010005;
+    width: 80px;
+    height: 80px;
+    margin-right: 4em;
+    overflow: hidden;
   }
 
-  @media (min-width: 10px) {
-    grid-template-columns: 0.2fr 2fr;
+}
+.titleWrapper{
+  background-color:var(--pageColor);
+  text-align:center;
 
-    .col1 {
-      width: auto;
-      height: auto;
 
-      // background-color: rgb(90, 70, 9);
-
-      .pc {
-        position: fixed;
-        top: 0;
-        left: 0;
-
-        width: 400px;
-        height: 300px;
-        margin: -15px -15px -15px -15px;
-        max-width: 5em;
-        height: 5em;
-      }
-    }
-
-    .col2 {
-      max-height: 5em;
-      //background-color: rgb(145, 5, 145);
-      // background-color: rgb(5, 5, 112);
-      background-color: var(--pageColor);
-      padding: 10px;
-
-      h1 {
-        display: inline-block;
-        font-size: medium;
-        //background-color: rgb(144, 129, 31);
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-      }
-    }
+  .groupG {
+    color: whitesmoke;
+    font-size: 13pt;
+    font-weight: 700;
   }
+  .etrep {
+
+    color: #3cb7f4;
+    font-size: 13pt;
+    font-weight: 700;
+  }
+
+  .btnSubmitWrapper{
+
+  
+    .btnSubmit{
+      color: rgb(126, 126, 205);
+      font-weight: 700;
+      background-color: black;
+      &:hover{
+        color: white;
+        background-color: red;
+      }
+    }
+
+    i{
+      color: blue;
+    }
+
+  }
+
+
+
+}
+
+
+
+
 
   @media (min-width: 700px) {
-    grid-template-columns: 0.2fr 2fr;
-
-    .col1 {
-      max-height: 5em;
-      background-color: rgb(5, 5, 112);
-      padding: 10px;
-      display: flexbox;
-      justify-content: center;
-
-      img {
-        position: fixed;
-        top: 0;
-        left: 0;
-
-        width: 100%;
-        height: 100%;
-        margin: -2em -2em -2em -2em;
+    .titleWrapper{
+      .groupG {
+       
+        font-size: 20pt;
+     
       }
-
-      .pc {
-        max-width: 10em;
-        height: 10em;
+      .etrep {
+    
+      
+        font-size: 20pt;
+  
       }
     }
 
-    .col2 {
-      max-height: 5em;
-      //background-color: rgb(145, 5, 145);
-      // background-color: rgb(5, 5, 112);
-      padding: 10px;
-
-      h1 {
-        max-height: 5em;
-        display: flex;
-        font-size: 24pt;
-        font-weight: 800;
-        // background-color: rgb(188, 240, 1);
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-      }
-    }
   }
 }
 
-// Phone Title in body
-.phoneCategory{
-  color: rgb(158, 72, 244);
-  margin-top: 1em;
-  margin-bottom: 0;
-  text-align: center;
 
-}
+
+// Phone Title in body
+
 .laptopText {
   color: rgb(158, 72, 244);
   margin-top: 1em;
   margin-bottom: 0;
   text-align: center;
+
+
 }
 
 .otherText{
@@ -238,13 +171,23 @@ position: relative;
 
 // phones section
 .phonesWrapper {
+
   display: grid;
   grid-template-columns: auto auto auto;
 
-  margin-top: 1em;
+  margin-top: 7em;
   padding: 0 0 0 0;
   background-color: #e9f0f4;
- 
+ .divPhones{
+grid-column-start: 1;
+grid-column-end: 3;
+background-color:rgb(20, 3, 39);
+display: flex;
+justify-content: center;
+text-align: center;
+flex-wrap: wrap;
+
+ }
    
   .card {
    // visibility: hidden;
@@ -396,6 +339,20 @@ position: relative;
 
   @media (min-width: 700px) {
     grid-template-columns: auto auto auto auto auto auto;
+
+
+
+
+    .divPhones{
+      grid-column-start: 1;
+      grid-column-end: 7;
+     
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+      
+       }
     .card {
       .col1 {
         .spec {
@@ -776,6 +733,16 @@ position: relative;
 
   @media (min-width: 700px) {
     grid-template-columns: auto auto auto;
+    .divPhones{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+      
+       }
     .card {
       .col1 {
         .spec {

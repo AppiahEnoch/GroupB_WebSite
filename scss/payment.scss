@@ -5,7 +5,9 @@
 @import "v4-shims.scss";
 
 :root {
-  --pageColor: white;
+ // --pageColor: blue ;
+ // --pageColor: blue ;
+  --pageColor: white ;
   --fontfamily: Arial, Helvetica, sans-serif;
   --textColor: rgb(247, 235, 235);
 }
@@ -27,6 +29,10 @@ body {
   margin-bottom: 5em;
 
   background-color: var(--pageColor);
+  background-image: url('../image/background/GBpattern4.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   font-family: var(--fontfamily);
   color: var(--textColor);
 
@@ -53,10 +59,7 @@ p {
 }
 
 .titleWrapper {
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-  top: 0;
+
   background-color: rgb(2, 7, 11);
   display: flex;
   .col1 {
