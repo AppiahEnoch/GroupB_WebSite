@@ -1,0 +1,112 @@
+@import "fontawesome.scss";
+@import "solid.scss";
+@import "brands.scss";
+@import "regular.scss";
+@import "v4-shims.scss";
+
+:root {
+  //min-with
+  --smallPnone: 320px;
+  --phone: 37.5em;
+  --tablet: 48em;
+  --desktop: 700px;
+  --largeScreen: 114em;
+
+  --pageColor: rgb(27, 1, 58);
+  --fontfamily: Arial, Helvetica, sans-serif;
+  --textColor: rgb(247, 235, 235);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--pageColor);
+  font-family: var(--fontfamily);
+  color: var(--textColor);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a,
+::before,
+::after {
+  text-decoration: none;
+}
+
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    background-color: var(--pageColor);
+  
+    .imageWrapper {
+      img {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #010005;
+        width: 4rem;
+        height: 4rem;
+        margin-right: 4em;
+        overflow: hidden;
+      }
+    }
+    .titleWrapper {
+      background-color: var(--pageColor);
+      text-align: center;
+  
+      .groupG {
+        color: whitesmoke;
+        font-size: 13pt;
+        font-weight: 700;
+      }
+      .etrep {
+        color: #3cb7f4;
+        font-size: 13pt;
+        font-weight: 700;
+      }
+  
+
+    }
+  
+    @media (min-width: 700px) {
+      .titleWrapper {
+        .groupG {
+          font-size: 20pt;
+        }
+        .etrep {
+          font-size: 20pt;
+        }
+      }
+    }
+  }
