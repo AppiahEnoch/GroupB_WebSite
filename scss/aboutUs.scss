@@ -313,8 +313,11 @@ a,
       .imageWrapper {
         background-color: rgb(32, 239, 239);
         img {
+          display: flex;
           width: 20em;
           height: 20em;
+          object-fit: cover;
+      
      
          
         }
