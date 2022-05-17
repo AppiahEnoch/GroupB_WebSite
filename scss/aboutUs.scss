@@ -75,8 +75,8 @@ a,
         top: 0;
         left: 0;
         background-color: #010005;
-        width: 4rem;
-        height: 4rem;
+        width: 2em;
+        height: 2em;
         margin-right: 4em;
         overflow: hidden;
       }
@@ -108,7 +108,17 @@ a,
           font-size: 20pt;
         }
       }
+
+      .imageWrapper {
+        img {
+          width: 4em;
+          height: 4em;
+       
+        }
+      }
     }
+
+
   }
 
 
@@ -147,11 +157,20 @@ a,
     }
      }
 
-     .textWrappe{
+    .textWrapper{
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 50% 50%;
       gap: 1em;
+
+      .col1{
+        background-color:rgb(7, 7, 174);
       
+      }
+      .col2{
+        background-color: rgb(7, 7, 174);
+      
+      }
+
 
      }
     }
