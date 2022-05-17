@@ -163,13 +163,16 @@ a,
       gap: 1em;
 
       .col1{
+        
         background-color:rgb(7, 7, 174);
+
+        p{
+          padding: 2px;
+          margin: 2px;
+        }
       
       }
-      .col2{
-        background-color: rgb(7, 7, 174);
-      
-      }
+ 
 
 
      }
