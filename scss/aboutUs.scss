@@ -110,3 +110,53 @@ a,
       }
     }
   }
+
+
+  .mainWrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    .space{
+      min-height: 5em;
+      background-color: rgb(4, 1, 12);
+
+    }
+    .title{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      min-height: 5em;
+      
+      background-color: rgb(4, 1, 12);
+      h1{
+        color: white;
+      }
+    }
+    .businessWrapper{
+
+     min-height: 20em;
+     background-color: white;
+     display: grid;
+     grid-template-columns: 40% 60%;
+     .imageWrapper{
+    background-color: aqua;
+     }
+    }
+
+    .WorkersWrapper{
+      min-height: 10em;
+      background-color:rgb(110, 16, 232);
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+    }
+
+    
+    .TestimonialsWrapper{
+      min-height: 10em;
+      background-color:rgb(183, 243, 182);
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+    }
+
+  }
