@@ -58,10 +58,10 @@ a,
 }
 
 .social {
-  margin-top: .5em;
+  margin-top: 0.5em;
   display: flex;
-  margin-left: .5em;
-  margin-right: .5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   align-items: center;
   justify-content: center;
 
@@ -85,7 +85,6 @@ a,
   font-size: 10px;
   color: #9593a0;
 }
-
 
 .header {
   position: fixed;
@@ -360,11 +359,9 @@ a,
   }
 
   .TestimonialsWrapper {
-  
     background-color: rgb(13, 1, 29);
     display: flex;
     justify-content: center;
-
   }
 }
 
@@ -388,10 +385,9 @@ a,
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
-          .lcard2 {
-            display: none;
-          }
-        
+        .lcard2 {
+          display: none;
+        }
       }
     }
     .businessWrapper {
@@ -404,8 +400,6 @@ a,
           height: 20em;
           object-fit: cover;
         }
-
-  
       }
 
       .textWrapper {
@@ -455,16 +449,12 @@ a,
     }
   }
 
-
-
-
   .social {
     margin-top: 1em;
 
     margin-left: 1em;
     margin-right: 1em;
 
-  
     a {
       // background-color: chocolate;
       padding: 1em;
@@ -472,15 +462,13 @@ a,
       i {
         font-weight: 700;
         font-size: large;
-     
       }
     }
   }
-  
+
   .copyR {
-    text-align:left;
+    text-align: left;
 
     font-size: 15px;
- 
   }
 }
