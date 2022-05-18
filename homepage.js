@@ -1,8 +1,10 @@
 function openViewItemsSelf() {
+  alert("PLEASE YOU MUST SIGN UP BEFORE YOU CAN MAKE AN ORDER!");
   window.open("viewItems.html", "_self");
 }
 
 function openPaymentSelf() {
+  alert("PLEASE YOU MUST SIGN UP BEFORE YOU CAN MAKE AN ORDER!");
   window.open("payment.html", "_self");
 }
 
@@ -11,4 +13,8 @@ function openAboutUsSelf() {
 }
 function openLoginSelf() {
   window.open("login.html", "_self");
+}
+
+function openSignupSelf() {
+  window.open("signUp.html", "_self");
 }

@@ -76,6 +76,12 @@ li {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+    .signup{
+      border-radius: 10%;
+      border: 2px solid blue;
+    }
+  
 }
 
 .navWrapper1 {
@@ -108,6 +114,7 @@ li {
 
 nav {
   margin-top: 0.5rem;
+
 }
 
 .gb {
@@ -143,6 +150,8 @@ nav {
 
 i {
   color: #3cb7f4;
+
+ 
 }
 
 .imageWrapper {
