@@ -178,9 +178,11 @@ a,
     padding: 0;
     background-color: white;
     display: grid;
-    grid-template-columns: 30% 70%;
-    height: 11em;
+    grid-template-columns: 1fr;
+    background-color: yellow;
     .imageWrapper {
+  display: flex;
+  justify-content: center;
       background-color: rgb(32, 239, 239);
       img {
         width: 10em;
@@ -188,13 +190,15 @@ a,
         object-fit: contain;
       }
     }
-
+  
     .textWrapper {
       display: grid;
       grid-template-columns: 30% 70%;
-      gap: 0.5em;
+      gap: 0.2em;
+    
 
       .col1 {
+        background-color: gray;
         h2 {
           font-size: medium;
           padding: 0;
@@ -214,14 +218,16 @@ a,
       }
 
       .col2 {
-        background-color: rgb(231, 231, 243);
+       
+        background-color: rgb(14, 14, 170);
         display: grid;
-        margin-top: 0.5em;
+        margin-top: 0.0em;
         grid-template-rows: 10% 90%;
         .colocation1 {
           h3 {
             padding: 0;
             margin: 0;
+
           }
           display: flex;
           justify-content: center;
@@ -376,7 +382,7 @@ a,
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   h1 {
     font-size: 20pt;
   }
@@ -402,8 +408,11 @@ a,
       }
     }
     .businessWrapper {
+
+      display: grid;
+      grid-template-columns: 30% 70%;
       margin-bottom: 2px;
-      height: 20em;
+       background-color: gray;
       .imageWrapper {
         background-color: rgb(32, 239, 239);
         img {
@@ -418,6 +427,7 @@ a,
         .col1 {
           h2 {
             font-size: 20pt;
+            
           }
           p {
             font-size: larger;
@@ -431,6 +441,7 @@ a,
 
         .col2 {
           .colocation2 {
+          
             .loc {
               .locSymbol {
                 font-size: larger;
@@ -441,6 +452,7 @@ a,
                   color: white;
                   font-size: 15pt;
                   font-weight: 700;
+                
                 }
 
                 .mobile {
