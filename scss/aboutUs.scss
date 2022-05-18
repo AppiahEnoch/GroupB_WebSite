@@ -179,7 +179,7 @@ a,
     background-color: white;
     display: grid;
     grid-template-columns: 30% 70%;
-    height: 10em;
+    height: 11em;
     .imageWrapper {
       background-color: rgb(32, 239, 239);
       img {
@@ -240,7 +240,7 @@ a,
 
           .loc {
             display: grid;
-            grid-template-rows: 20% 80%;
+            grid-template-rows: 12% 88%;
             background-color: #3cb7f4;
 
             .locSymbol {
@@ -300,6 +300,7 @@ a,
       h2 {
         margin: 0;
         align-self: flex-start;
+        margin-top: 5px;
       }
     }
 
@@ -310,7 +311,7 @@ a,
       background-color: gray;
       .lcard {
         display: grid;
-        grid-template-rows: 70% 30%;
+        grid-template-rows: 60% 40%;
 
         background-color: #3cb7f4;
         .imgWrapper {
@@ -319,14 +320,19 @@ a,
           align-items: center;
           background-color: rgb(27, 44, 150);
           img {
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
             background-size: contain;
             border-radius: 50%;
           }
         }
 
         .textWrap {
+          h3 {
+            margin-top: 0;
+            margin-bottom: 2px;
+          }
+
           background-color: rgb(19, 17, 118);
           text-align: center;
         }
@@ -334,17 +340,17 @@ a,
 
       .lcard2 {
         display: grid;
-        grid-template-rows: 70% 30%;
+        grid-template-rows: 60% 40%;
 
-        background-color: #3cb7f4;
+        background-color: #4c05af;
         .imgWrapper {
           display: flex;
           justify-content: center;
           align-items: center;
           background-color: rgb(27, 44, 150);
           img {
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 1 00px;
             background-size: contain;
             border-radius: 50%;
           }
@@ -353,6 +359,11 @@ a,
         .textWrap {
           background-color: rgb(19, 17, 118);
           text-align: center;
+
+          h3 {
+            margin-top: 0;
+            margin-bottom: 2px;
+          }
         }
       }
     }
@@ -391,6 +402,7 @@ a,
       }
     }
     .businessWrapper {
+      margin-bottom: 2px;
       height: 20em;
       .imageWrapper {
         background-color: rgb(32, 239, 239);
