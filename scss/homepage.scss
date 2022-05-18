@@ -70,8 +70,6 @@ li {
     background-color: #0087ca;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-
-   
   }
 
   &:hover::after {
@@ -148,7 +146,7 @@ i {
 }
 
 .imageWrapper {
-overflow: hidden;
+  overflow: hidden;
   display: flex;
   //flex-wrap: wrap;
   justify-content: center;
@@ -159,7 +157,7 @@ overflow: hidden;
 
   // background-color: rgb(201, 210, 218);
   .content {
- padding-top: 1em;
+    padding-top: 1em;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -274,7 +272,7 @@ overflow: hidden;
       align-items: center;
       text-align: center;
       text-align: center;
-     // padding: 0.5em;
+      // padding: 0.5em;
       &:hover {
         text-decoration: underline;
       }
@@ -303,7 +301,7 @@ overflow: hidden;
 @media only screen and (min-device-width: 100px) {
   .gb {
     position: relative;
-  
+
     img {
       width: 5em;
       height: 100px;
@@ -339,10 +337,9 @@ overflow: hidden;
     font-size: x-small;
   }
   .social {
-   // background-color: gray;
+    // background-color: gray;
 
-  
-    a{
+    a {
       margin-left: 1px;
       margin-right: 1px;
       font-size: x-small;
@@ -353,7 +350,7 @@ overflow: hidden;
   i {
     margin-left: 0px;
     margin-right: 0px;
-    font-size:small ;
+    font-size: small;
   }
 
   .copyR {
@@ -368,7 +365,7 @@ overflow: hidden;
 @media (min-width: 700px) {
   .gb {
     position: relative;
-  
+
     img {
       width: 10em;
       height: 100px;
@@ -381,11 +378,9 @@ overflow: hidden;
     }
   }
 
-
   li {
     font-size: large;
     font-weight: bold;
-    
   }
 
   .textWrapper h1 {
@@ -460,23 +455,21 @@ overflow: hidden;
   a {
     font-size: small;
   }
+
   .social {
     display: flex;
-  margin-left: 1em;
-  margin-right: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
 
-    a{
-     // background-color: chocolate;
+    a {
+      // background-color: chocolate;
       padding: 0.5em;
 
       i {
         font-weight: 700;
-     font-size: large;
+        font-size: large;
       }
     }
-
-
-
   }
 
   .copyR {
