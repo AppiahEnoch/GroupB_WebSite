@@ -4,7 +4,7 @@ function openViewItemsSelf() {
 }
 
 function openPaymentSelf() {
-  alert("PLEASE YOU MUST SIGN UP BEFORE YOU CAN MAKE AN ORDER!");
+
   window.open("payment.html", "_self");
 }
 
